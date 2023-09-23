@@ -10,60 +10,62 @@
 <body>
 
     <header>
-        <a href="#WebStudio"><span>Web</span>Studio</a>
+        <a href="index.html"><span>Web</span>Studio</a>
         <nav>
             <ul>
-                <li><a href="#studio">Студія</a></li>
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#portfolio">Портфоліо</a></li>
-                <li><a href="#contacts">Контакти</a></li>
+                <li><a href="#">Студія</a></li>
+                <li><a href="#">Портфоліо</a></li>
+                <li><a href="#">Контакти</a></li>
             </ul>
         </nav>
-        <address>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
-
+        <nav> 
+            <ul>
+               <p href="mailto:info@devstudio.com">info@devstudio.com</p>
+               <p href="tel:+380961111111">+38 096 111 11 11</p> 
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="abs">
+        <section class="hero">
             <div>
-                <h1 class="abs__text">Ефективні рішення для вашого бізнесу</h1>
+                <h1 class="hero__text">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button">Замовити послугу</button>
             </div>
         </section>
+
         <section class="about-us">
             <h2 style="visibility: hidden;">Наші переваги</h2>
-            <div class="about-us__item">
-                <h3 class="about-us__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="about-us__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-                </p>
-            </div>
 
-            <div class="about-us__item">
+        <ul class="about-us__inner">
+            <li class="about-us__item">
+                <h3 class="about-us__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="about-us__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            </li>
+
+            <li class="about-us__item">
                 <h3 class="about-us__title">ПУНКТУАЛЬНІСТЬ</h3>
                 <p class="about-us__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-            </div>
+            </li>
 
-            <div class="about-us__item">
+            <li class="about-us__item">
                 <h3 class="about-us__title">ПЛАНУВАННЯ</h3>
                 <p class="about-us__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-            </div>
+            </li>
 
-            <div class="about-us__item">
+            <li class="about-us__item">
                 <h3 class="about-us__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                 <p class="about-us__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-            </div>
-
+            </li>
+        </ul>
         </section>
 
         <section class="what-we-do">
             <h2 class="what-we-do__title">Чим ми займаємося</h2>
             <div class="what-we-do__img-container">
-                <img src="./images/image-1.jpg" alt="" class="what-we-do__img">
-                <img src="./images/image-2.jpg" alt="" class="what-we-do__img">
-                <img src="./images/image-3.jpg" alt="" class="what-we-do__img">
+                <img src="./images/image-1.jpg" alt="what-we-do image1" height="294" width="370" class="what-we-do__img">
+                <img src="./images/image-2.jpg" alt="what-we-do image2" height="294" width="370" class="what-we-do__img">
+                <img src="./images/image-3.jpg" alt="what-we-do image3" height="294" width="370" class="what-we-do__img">
             </div>
         </section>
 
