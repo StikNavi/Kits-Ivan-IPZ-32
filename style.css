@@ -1,11 +1,19 @@
 li {
     list-style: none;
 }
+
 a {
     color: #fff;
     text-decoration: none;
 }
-.logob, .logow {
+
+body {
+    font-family: Roboto, serif, 'Times New Roman';
+    color: #212121;
+}
+
+.logob,
+.logow {
     color: #2196F3;
     font-family: Raleway;
     font-size: 26px;
@@ -15,17 +23,16 @@ a {
     letter-spacing: 0.78px;
 }
 
-.logob span{
+.logob span {
     color: #000;
 }
 
-.logow span{
+.logow span {
     color: #FFF;
 }
 
-.navig {
-    color: #212121;
-    font-family: Roboto;
+.act {
+    color: #2196F3;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -33,23 +40,34 @@ a {
     letter-spacing: 0.28px;
 }
 
-a.navig:hover,:focus {
+.navig {
+    color: #212121;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.navig:hover,
+:focus {
     color: #2196F3;
 }
 
-
+button,
+a {
+    font-family: inherit;
+}
 
 .shapka {
     /* width: 100%;
     height: 600px; */
     background: #2F303A;
-    flex-shrink: 0;
 }
 
 .mtext {
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
     font-size: 44px;
     font-style: normal;
     font-weight: 900;
@@ -61,14 +79,11 @@ a.navig:hover,:focus {
 .buttona {
     width: 200px;
     height: 50px;
-    flex-shrink: 0;
     border-radius: 4px;
     border: #2196F3;
     background: #2196F3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -76,13 +91,14 @@ a.navig:hover,:focus {
     letter-spacing: 0.96px;
 }
 
-.buttona:hover,:focus {
+.buttona:hover,
+:focus {
     background-color: #188ce8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 .newheader {
-    color: #212121;
-    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -93,7 +109,6 @@ a.navig:hover,:focus {
 
 .texth {
     color: #757575;
-    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -103,9 +118,7 @@ a.navig:hover,:focus {
 
 
 .whyheader {
-    color: #212121;
     text-align: center;
-    font-family: Roboto;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -117,16 +130,14 @@ a.navig:hover,:focus {
     background: #F5F4FA;
     /* width: 100%;
     height: 648px; */
-    flex-shrink: 0;
 }
 
 .teamCard {
-    width: 270px;
-    height: 368px;
-    flex-shrink: 0;
+    /* width: 270px;
+    height: 368px; */
+    /* flex-shrink: 0; */
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
-
     /* material shadow v1 */
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
@@ -134,7 +145,6 @@ a.navig:hover,:focus {
 .teamText {
     color: #757575;
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -143,9 +153,7 @@ a.navig:hover,:focus {
 }
 
 .teamName {
-    color: #212121;
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -159,16 +167,56 @@ a.navig:hover,:focus {
 
 .add {
     color: #FFF;
-    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 114.286%;
     letter-spacing: 0.42px;
 }
-.info{
+
+.info {
     color: rgba(255, 255, 255, 0.60);
 }
-.info:hover,:focus {
+
+.info:hover,
+:focus {
     color: #2196F3;
+}
+
+.filter-button {
+    border-radius: 4px;
+    border: #F5F4FA;
+    background-color: #F5F4FA;
+    padding: 6px, 22px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 162%;
+    letter-spacing: 0.48px;
+}
+
+.filter-button:hover,
+:focus {
+    background-color: #2196F3;
+    border: #2196F3;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.portfolio-head {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 200%;
+    letter-spacing: 1.08px;
+}
+
+.portfolio-filt {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 187.5%;
+    letter-spacing: 0.48px;
+}
+
+.portfolio-card {
+    border: 1px solid #eee;
 }
