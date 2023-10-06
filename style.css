@@ -1,3 +1,9 @@
+:root{
+    --primary-color: #212121;
+    --secondary-color: #2196F3;
+    --white-grey: #757575;
+}
+
 li {
     list-style: none;
 }
@@ -8,18 +14,26 @@ a {
 }
 
 body {
-    font-family: Roboto, serif, 'Times New Roman';
-    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+
+    color: var(--primary-color);
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
 }
 
 .logob,
 .logow {
-    color: #2196F3;
-    font-family: Raleway;
+    color: var(--secondary-color);
+    font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.78px;
 }
 
@@ -31,27 +45,25 @@ body {
     color: #FFF;
 }
 
-.act {
-    color: #2196F3;
-    font-size: 14px;
-    font-style: normal;
+.active {
+    color: var(--secondary-color);
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.28px;
 }
 
 .navig {
-    color: #212121;
-    font-size: 14px;
-    font-style: normal;
+    color: var(--primary-color);
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.28px;
 }
 
+.navig-mail{
+    color: var(--white-grey);
+}
+
 .navig:hover,
-:focus {
-    color: #2196F3;
+.navig:focus {
+    color: var(--secondary-color);
 }
 
 button,
@@ -69,7 +81,6 @@ a {
     color: #FFF;
     text-align: center;
     font-size: 44px;
-    font-style: normal;
     font-weight: 900;
     line-height: 136.364%;
     letter-spacing: 2.64px;
@@ -77,41 +88,32 @@ a {
 }
 
 .buttona {
-    width: 200px;
-    height: 50px;
     border-radius: 4px;
-    border: #2196F3;
-    background: #2196F3;
+    border: var(--secondary-color);
+    background: var(--secondary-color);
     color: #FFF;
     text-align: center;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 187.5%;
     letter-spacing: 0.96px;
 }
 
 .buttona:hover,
-:focus {
+.buttona:focus {
     background-color: #188ce8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
 }
 
 .newheader {
-    font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
 
 .texth {
-    color: #757575;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
+    color: var(--white-grey);
     line-height: 171.429%;
     letter-spacing: 0.42px;
 }
@@ -120,9 +122,7 @@ a {
 .whyheader {
     text-align: center;
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1.08px;
 }
 
@@ -143,21 +143,16 @@ a {
 }
 
 .teamText {
-    color: #757575;
+    color: var(--white-grey);
     text-align: center;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.48px;
 }
 
 .teamName {
     text-align: center;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.48px;
 }
 
@@ -167,11 +162,9 @@ a {
 
 .add {
     color: #FFF;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 114.286%;
     letter-spacing: 0.42px;
+    font-style: normal;
 }
 
 .info {
@@ -180,7 +173,7 @@ a {
 
 .info:hover,
 :focus {
-    color: #2196F3;
+    color: var(--secondary-color);
 }
 
 .filter-button {
@@ -196,9 +189,10 @@ a {
 }
 
 .filter-button:hover,
-:focus {
-    background-color: #2196F3;
-    border: #2196F3;
+.filter-button:focus {
+    background-color: var(--secondary-color);
+    border: var(--secondary-color);
+    color: #FFF;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -210,9 +204,8 @@ a {
 }
 
 .portfolio-filt {
-    color: #757575;
+    color: var(--white-grey);
     font-size: 16px;
-    font-weight: 400;
     line-height: 187.5%;
     letter-spacing: 0.48px;
 }
