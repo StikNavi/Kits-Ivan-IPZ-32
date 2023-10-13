@@ -8,27 +8,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
 </head>
 <body>
-    <header>
-        <a class="logob" href="index.html">
-            <p>Web<span>Studio</span></p>
-        </a>
-        <nav>
-            <ul>
-                <li><a class ="navig" href="index.html">Студія</a></li>
-                <li><a class ="active" href="portfolio.html">Портфоліо</a></li>
-                <li><a class ="navig" href="#">Контакти</a></li>
+    <header class="container">
+        <div class=" header">
+            <a class="logob" href="index.html">
+                <p>Web<span>Studio</span></p>
+            </a>
+            <nav>
+                <ul class="navig-list">
+                    <li><a class ="navig" href="index.html">Студія</a></li>
+                    <li><a class ="active navig" href="portfolio.html">Портфоліо</a></li>
+                    <li><a class ="navig" href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="mail-list">
+                <li><a class ="navig navig-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class ="navig navig-mail" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul>
-            <li><a class ="navig navig-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class ="navig navig-mail" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="container">
             <ul class="filters">
                 <li><button class="filter-button" type="button">Усі</button></li>
                 <li><button class="filter-button" type="button">Веб-сайти</button></li>
@@ -63,7 +66,7 @@
                     <p class="portfolio-filt">Додаток</p>
                 </li>
                 <li class="portfolio-card">
-                    <img src="images/img3.6.jpg" alt="Єпловський пк-монік" width="370">
+                    <img src="images/img3.6.jpg" alt="Епловський пк-монік" width="370">
                     <h3 class="portfolio-head">Inspiration has no Borders</h3>
                     <p class="portfolio-filt">Веб-сайт</p>
                 </li>
@@ -87,16 +90,18 @@
         </section>
     </main>
     <footer class="foot">
-        <a class="logow">
-            <p>Web<span>Studio</span></p>
-        </a>
-        <address class="add">
-            <ul>
-                <li><a rel="Карти" href="https://maps.app.goo.gl/vQGhtB5WwhVkgeEz5" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li><a class = "info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="info" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="logow">
+                <p>Web<span>Studio</span></p>
+            </a>
+            <address class="add">
+                <ul>
+                    <li><a rel="noreferrer nofollow" href="https://maps.app.goo.gl/vQGhtB5WwhVkgeEz5" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
+                    <li><a class = "info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="info" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>

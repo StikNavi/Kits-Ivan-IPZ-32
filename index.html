@@ -8,32 +8,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
 </head>
 <body>
-    <header>
-        <a class="logob" href="index.html">
-            <p>Web<span>Studio</span></p>
-        </a>
-        <nav>
-            <ul>
-                <li><a class ="active" href="index.html">Студія</a></li>
-                <li><a class ="navig" href="portfolio.html">Портфоліо</a></li>
-                <li><a class ="navig" href="#">Контакти</a></li>
+    <header class="container">
+        <div class=" header">
+            <a class="logob" href="index.html">
+                <p>Web<span>Studio</span></p>
+            </a>
+            <nav>
+                <ul class="navig-list">
+                    <li><a class ="active navig" href="index.html">Студія</a></li>
+                    <li><a class ="navig" href="portfolio.html">Портфоліо</a></li>
+                    <li><a class ="navig" href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="mail-list">
+                <li><a class ="navig navig-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class ="navig navig-mail" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul>
-            <li><a class ="navig navig-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class ="navig navig-mail" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
         <section class="shapka">
-            <h1 class="mtext">Ефективні рішення для <br> вашого бізнесу</h1>
+            <h1 class="mtext">Ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="buttona">Замовити послугу</button>
         </section>
-        <section>
-            <ul>
+        <section class="container">
+            <ul class="list-busines">
                 <li><h3 class="newheader">Увага до деталей</h3>
                     <p class="texth">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                 </li>
@@ -48,51 +51,55 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="container">
             <h2 class="whyheader">Чим ми займаємося</h2>
-            <ul>
+            <ul class="what-list">
                 <li><img src="images/img.jpg" alt="Кляцає по клаві" width="370"></li>
                 <li><img src="images/img2.png" alt="Дивиться в телефон" width="370"></li>
                 <li><img src="images/img3.png" alt="Вибирає колір на планшеті" width="370"></li>   
             </ul>
         </section>
-        <section>
-            <h2 class="whyheader">Наша команда</h2>
-            <ul class="teamSection">
-                <li class="teamCard">
-                    <img class="teamPhoto" src="images/img2.1.jpg" alt="Чєл Ігор Дем'яненко" width="270">
-                    <h3 class="teamName">Ігор Дем'яненко</h3>
-                    <p class="teamText">Product Designer</p>
-                </li>
-                <li class="teamCard">
-                    <img class="teamPhoto" src="images/img2.2.jpg" alt="Чіка Ольга Рєпіна" width="270">
-                    <h3 class="teamName">Ольга Рєпіна</h3>
-                    <p class="teamText">Frontend Developer</p>
-                </li>
-                <li class="teamCard">
-                    <img class="teamPhoto" src="images/img2.3.jpg" alt="Чєл Микола Тарасов" width="270">
-                    <h3 class="teamName">Микола Тарасов</h3>
-                    <p class="teamText">Marketing</p>
-                </li>
-                <li class="teamCard">
-                    <img class="teamPhoto" src="images/img2.4.jpg" alt="Чєл Михайло Єрмаков" width="270">
-                    <h3 class="teamName">Михайло Єрмаков</h3>
-                    <p class="teamText">UI Designer</p>
-                </li>
-            </ul>
+        <section class="teamSection">
+            <div class="container">
+                <h2 class="whyheader">Наша команда</h2>
+                <ul class="team-list">
+                    <li class="teamCard">
+                        <img class="teamPhoto" src="images/img2.1.jpg" alt="Чєл Ігор Дем'яненко" width="270">
+                        <h3 class="teamName">Ігор Дем'яненко</h3>
+                        <p class="teamText">Product Designer</p>
+                    </li>
+                    <li class="teamCard">
+                        <img class="teamPhoto" src="images/img2.2.jpg" alt="Чіка Ольга Рєпіна" width="270">
+                        <h3 class="teamName">Ольга Рєпіна</h3>
+                        <p class="teamText">Frontend Developer</p>
+                    </li>
+                    <li class="teamCard">
+                        <img class="teamPhoto" src="images/img2.3.jpg" alt="Чєл Микола Тарасов" width="270">
+                        <h3 class="teamName">Микола Тарасов</h3>
+                        <p class="teamText">Marketing</p>
+                    </li>
+                    <li class="teamCard">
+                        <img class="teamPhoto" src="images/img2.4.jpg" alt="Чєл Михайло Єрмаков" width="270">
+                        <h3 class="teamName">Михайло Єрмаков</h3>
+                        <p class="teamText">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="foot">
-        <a class="logow">
-            <p>Web<span>Studio</span></p>
-        </a>
-        <address class="add">
-            <ul>
-                <li><a rel="noreferrer nofollow" href="https://maps.app.goo.gl/vQGhtB5WwhVkgeEz5" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li><a class = "info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="info" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="logow">
+                <p>Web<span>Studio</span></p>
+            </a>
+            <address class="add">
+                <ul>
+                    <li><a rel="noreferrer nofollow" href="https://maps.app.goo.gl/vQGhtB5WwhVkgeEz5" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
+                    <li><a class = "info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="info" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
