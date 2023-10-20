@@ -1,0 +1,213 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --black-color: #212121;
+    --blue-color: #2196F3;
+
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a, button {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+address{
+ font-style: normal;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    color: var(--black-color);
+}
+
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* текст чорного кольору і  параметри шрифту */
+.menu a,
+.con {
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    /* плавна зміна кольору */
+    transition: color 300ms ease-in-out; 
+}
+
+a.con {
+    font-size: 14px;
+    line-height: normal;
+    color: #757575;
+}
+  /* При наведенні мишки текст стає синім */
+.menu a:hover,
+.menu a:focus,
+.con:hover,
+.con:focus {
+    color: var(--blue-color);
+}
+
+/* Стиль для посилання "WebStudio" */
+span {
+    color: #2196F3;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    line-height: normal;
+  }
+.web-studio {
+    font-family: Raleway;
+    color: black;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    text-decoration: none;
+  }
+.hero__text {
+    width: 696px;
+    color: white;
+    text-align: center;
+    font-size: 44px;
+    line-height:136.364%; 
+    font-weight: 900;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;}
+.hero {
+    background-color: #2F303A;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center; /* Центрування по вертикалі */
+    }
+.btn {
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 0.96px;
+    font-size: 16px;
+    background: #2196F3;
+    flex-shrink: 0;
+    border-radius: 4px;
+    line-height: 187.5%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+.about-us__title{
+color: #212121;
+font-size: 14px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.about-us__text{
+flex-shrink: 0;
+color: #757575;
+font-size: 14px;
+line-height: 171.429%;
+font-weight: 400;
+letter-spacing: 0.42px;
+}
+
+.what-we-do__title {
+color: #212121;
+text-align: center;
+font-size: 36px;
+line-height: normal;
+font-weight: 700;
+letter-spacing: 1.08px;}
+
+.our-team__title {
+color: #212121;
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+letter-spacing: 1.08px;}
+
+.our-team__name{
+color: #212121;
+text-align: center;
+font-size: 16px;
+line-height: normal;
+font-weight: 500;
+letter-spacing: 0.48px;}
+
+.our-team__job{
+    color: #757575;
+    text-align: center;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.48px;}
+.end {
+    background: #2F303A;
+}
+.end p{
+    color: #FFF;
+    text-decoration: none; 
+    font-size: 14px;
+    line-height: 114.286%;
+    letter-spacing: 0.42px;}
+
+.web-studio_b {
+    color: white;
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: normal;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+.connect{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    line-height: 114.286%;
+    letter-spacing: 0.42px;}
+
+
+.catalog__name {
+    text-decoration: none;
+    color: #212121;
+    font-size: 18px;
+    line-height: 200%;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+}    
+.catalog__specification {
+    color: #757575;
+    font-size: 16px;
+    line-height: 187.5%;
+    letter-spacing: 0.48px;
+}    
+
+.main {
+    display: flex;
+    align-items: center; /* Центрування по горизонталі */
+    justify-content: center;
+}
+    
+.main__button {
+    color: #212121;
+    text-align: center;
+    font-size: 16px;
+    line-height: 162.5%;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #F5F4FA;
+    transition: color 0.3s, background 0.3s; /* Додаємо перехідні анімації */
+    margin: 0  4px
+  }
+  
+.main__button:hover {
+    color: #FFF;
+    background: #2196F3;
+  }

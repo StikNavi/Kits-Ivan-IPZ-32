@@ -1,0 +1,39 @@
+class Car {
+  String brand;
+  String model;
+  int year;
+  double enginePower;
+
+  Car(this.brand, this.model, this.year, this.enginePower);
+
+  void displayInfo() {
+    print('Марка: $brand');
+    print('Модель: $model');
+    print('Рік випуску: $year');
+    print('Потужність двигуна: $enginePower к.с.');
+  }
+
+  double calculateTax() {
+    // Розрахунок податку, наприклад, 5% вартості авто на основі потужності двигуна.
+    double carValue = 20000.0; // Припустимо, що вартість автомобіля - 20000 доларів.
+    double taxRate = 0.05; // 5% податок.
+    double tax = carValue * taxRate;
+    return tax;
+  }
+}
+
+void main() {
+  // Створюємо об'єкти класу Car і виводимо інформацію про них.
+  var car1 = Car('Toyota', 'Camry', 2022, 180.0);
+  var car2 = Car('Honda', 'Civic', 2021, 150.0);
+
+  print('Інформація про автомобіль 1:');
+  car1.displayInfo();
+  double tax1 = car1.calculateTax();
+  print('Податок на автомобіль 1: $tax1 доларів');
+
+  print('\nІнформація про автомобіль 2:');
+  car2.displayInfo();
+  double tax2 = car2.calculateTax();
+  print('Податок на автомобіль 2: $tax2 доларів');
+}
