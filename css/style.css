@@ -2,6 +2,7 @@
     --primary-color: #212121;
     --secondary-color: #2196F3;
     --white-grey: #757575;
+    --black-grey: #AFB1B8;
 }
 ul{
     padding: 0;
@@ -110,7 +111,7 @@ a {
     background: #2F303A;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
-    url("/images/BackGround.jpg");
+    url("../images/BackGround.jpg");
 }
 
 .mtext {
@@ -220,7 +221,8 @@ a {
 
 .team-href{
     display: flex;
-    color: #AFB1B8;
+    border-radius: 50%;
+    color: var(--black-grey);
     padding: 12px;
     /* max-width: 44px;
     max-height: 44px; */
@@ -250,21 +252,28 @@ a {
     gap: 30px;
 }
 
-.customers-href{
-    display: inline-block;
+.customers-item{
+    max-width: 170px;
     border-radius: 4px;
-    border: 1px solid #AFB1B8;
-    padding: 16px 32px ;
-    color: #afb1b8;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    border: 1px solid var(--black-grey);
+    transition: border-color 0.3s ease;
 }
 
-.customers-href:hover,
-.customers-href:focus,
-.customers-href>.icon:hover,
-.customers-href>.icon:focus {
-    color: var(--secondary-color);
+.customers-href{
+    display: inline-block;
+    padding: 16px 32px ;
+    color: var(--black-grey);
+    transition: color 0.3s ease;
+}
+
+.customers-item:hover,
+.customers-item:focus {
     border-color: var(--secondary-color);
+}
+
+.customers-item:hover .customers-href,
+.customers-item:focus .customers-href {
+    color: var(--secondary-color);
 }
 
 .foot {
