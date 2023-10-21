@@ -76,8 +76,22 @@ button {
 }
 
 .navig-mail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--white-grey);
 }
+
+.navig-mail>.icons:hover{
+    color: var(--secondary-color);
+}
+
+/* .navig-mail::before{
+    content: url("/images/icons.svg#icon-envelope");
+    display: inline-block;
+    width: 16;
+    height: 12;
+} */
 
 .navig:hover,
 .navig:focus {
@@ -94,6 +108,9 @@ a {
     max-height: 600px;
     padding: 200px 0;
     background: #2F303A;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)),
+    url("/images/BackGround.jpg");
 }
 
 .mtext {
@@ -133,6 +150,16 @@ a {
 
 }
 
+.busines {
+    padding-top: 94px;
+}
+
+.busines-icons{
+    border-radius: 4px;
+    background: #F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
 .newheader {
     font-weight: 700;
     letter-spacing: 0.42px;
@@ -148,6 +175,7 @@ a {
 }
 
 .what-section {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -157,12 +185,6 @@ a {
     font-weight: 700;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
-    padding-top: 94px;
-}
-
-.teamSection {
-    background: #F5F4FA;
-    padding-bottom: 94px;
 }
 
 .teamCard {
@@ -179,6 +201,7 @@ a {
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.48px;
+    margin-bottom: 16px;
 }
 
 .teamName {
@@ -189,6 +212,61 @@ a {
     margin-bottom: 10px;
 }
 
+.team-contacts{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-href{
+    display: flex;
+    color: #AFB1B8;
+    padding: 12px;
+    /* max-width: 44px;
+    max-height: 44px; */
+}
+
+.team-href:hover{
+    color: #fff;
+    border-radius: 50%;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    transition: 300ms;
+}
+
+.teamSection {
+    background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customers-list{
+    display: flex;
+    gap: 30px;
+}
+
+.customers-href{
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    padding: 16px 32px ;
+    color: #afb1b8;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.customers-href:hover,
+.customers-href:focus,
+.customers-href>.icon:hover,
+.customers-href>.icon:focus {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
 .foot {
     background: #2F303A;
     padding-top: 60px;
@@ -196,10 +274,54 @@ a {
 }
 
 .add {
+    /* display: flex; */
     color: #FFF;
     line-height: 114.286%;
     letter-spacing: 0.42px;
     font-style: normal;
+    /* gap: 94px; */
+}
+
+.add-flex{
+    display: flex;
+    gap: 94px;
+}
+
+.foot-header{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.foot-contacts{
+    display: flex;
+    gap: 10px;
+}
+
+.foot-flex{
+    margin-top: 12px;
+}
+
+.foot-href{
+    display: flex;
+    color: #fff;
+    padding: 12px;
+    border: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.10);
+    /* max-width: 44px;
+    max-height: 44px; */
+}
+
+.foot-href:hover{
+    color: #fff;
+    border-radius: 50%;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    transition: 300ms;
 }
 
 .info {
@@ -241,6 +363,7 @@ a {
 }
 
 .portfolio-head {
+    color: var(--primary-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 200%;
@@ -249,7 +372,7 @@ a {
 }
 
 .portfolio-text{
-    padding: 20px 0 20px 24px;
+    padding: 20px 24px 20px 24px;
     /* gap: 4px; */
 }
 
@@ -265,7 +388,13 @@ a {
 .portfolio-card {
     border: 1px solid #eee;
     max-width: 370px;
+    
 }
+
+.portfolio-card:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 .header{
     border-bottom: 1px solid #ECECEC;
 }
@@ -295,8 +424,6 @@ a {
 .list-busines {
     display: flex;
     gap: 30px;
-    padding-top: 94px;
-    /* margin-bottom: 94px; */
 }
 
 .what-list {
@@ -331,3 +458,4 @@ a {
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
 }
+
