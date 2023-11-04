@@ -6,6 +6,10 @@
 
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -17,10 +21,6 @@ a, button {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
-}
-.text {
-    padding: 20px;
-    border: 2px dashed var(--primary-color);
 }
 
 address{
@@ -67,12 +67,17 @@ img{
     transition: color 300ms ease-in-out; 
 }
 
-a.contacts {
-    padding-left: 728px;
+.contacts {
     font-size: 14px;
     line-height: normal;
     color: #757575;
+    margin-right: 40px;
 }
+
+.contacts__list {
+    margin-left: auto;
+}
+
   /* При наведенні мишки текст стає синім */
 .menu a:hover,
 .menu a:focus,
@@ -89,7 +94,8 @@ a.contacts {
     margin-right: auto;
 }
 .header{
-    align-items: baseline;
+    border-bottom: 1px solid #ECECEC;
+    height: 80px;
 }
 .header> .container{
     display: flex;
@@ -101,9 +107,11 @@ a.contacts {
     align-items: center;
     height: 100%;
 }
-.header{
-    border-bottom: #ECECEC;
-    height: 80px;
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
 }
 .big_container{
     width: 100%;
@@ -116,28 +124,25 @@ a.contacts {
 li{
     display: inline-block;
 }
-.web-studio{
-    margin-right: 93px;
-}
-.menu li:not(:last-child) {
-margin-right: 50px;
-}
+
+
 .about-us__title{
     margin-bottom: 10px;
 }
 .contacts{
     margin-left: auto;
 }
-.contacts li:not(:last-child){
-    margin-right: 40px;
-}
+
 .about-us__inner {
     display: flex;
+    justify-content:center;
     gap: 30px;
 }
-.about-us__inner li {
+
+.about-us__item {
     max-width: 270px;
 }
+
 .what-we-do__img-container{
     display: flex;
     width: 100%;
@@ -155,6 +160,7 @@ margin-right: 50px;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.78px;
+    margin-right: 93px;
 }
 
 /* Стиль для посилання "WebStudio" */
@@ -191,6 +197,8 @@ span {
     display: flex;
     justify-content: center; /* Центрування по горизонталі */
     align-items: center; /* Центрування по вертикалі */
+    padding-top: 200px;
+    padding-bottom: 200px;
     }
 .btn {
     color: #FFF;
@@ -199,7 +207,7 @@ span {
     font-size: 16px;
     background: #2196F3;
     flex-shrink: 0;
-    border-radius: 4px;
+    border-radius: 0px;
     line-height: 187.5%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     display: inline-block;
@@ -218,7 +226,7 @@ span {
     gap: 30px;
     justify-content: center;
     flex-direction: row;
-    margin-top: 50px;       
+    margin-top: 50px;   
     }
 
 .about-us__title{
@@ -247,17 +255,36 @@ font-size: 36px;
 line-height: normal;
 font-weight: 700;
 letter-spacing: 1.08px;
+margin-bottom: 50px;
 }
-.our-team{
-    width: 100%;
+.our-team {
+    background: #F5F4FA;
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.our-team__inner{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+}
+.our-team__item {
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.our-team__item:not(:first-child)
+{
+margin-left:30px;
 }
 .our-team__img {
     flex-shrink: 0;
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
     /* material shadow v1 */
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.our-team__wrap {
+    padding: 30px;
 }
 
 .our-team__title {
@@ -265,7 +292,8 @@ color: #212121;
 text-align: center;
 font-size: 36px;
 font-weight: 700;
-letter-spacing: 1.08px;}
+letter-spacing: 1.08px;
+padding-bottom: 50px;}
 
 .our-team__name{
 color: #212121;
@@ -273,18 +301,18 @@ text-align: center;
 font-size: 16px;
 line-height: normal;
 font-weight: 500;
-letter-spacing: 0.48px;}
+letter-spacing: 0.48px;
+padding-bottom: 10px;}
 
-.teams :not(:last-child){
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
+
+
 .our-team__job{
     color: #757575;
     text-align: center;
     font-size: 16px;
     line-height: normal;
-    letter-spacing: 0.48px;}
+    letter-spacing: 0.48px;
+ }
 .end {
     background: #2F303A;
 }
@@ -303,7 +331,9 @@ letter-spacing: 0.48px;}
     font-weight: 700;
     letter-spacing: 0.78px;
     display: inline-block;
+    margin-left: 93px;
 }
+
 
 .adr {
     color: var(--background-primary-color);
@@ -312,6 +342,7 @@ letter-spacing: 0.48px;}
     letter-spacing: 0.42px;
     font-style: normal;
     margin-bottom: 12px;
+    margin-left: 93px;
 }
 
 .connect_information li:not(:last-child){
@@ -322,7 +353,9 @@ letter-spacing: 0.48px;}
     color: rgba(255, 255, 255, 0.60);
     font-size: 14px;
     line-height: 114.286%;
-    letter-spacing: 0.42px;}
+    letter-spacing: 0.42px;
+    margin-left: 93px;
+}
 .connect:hover {
     cursor: pointer;
 }
@@ -331,34 +364,41 @@ letter-spacing: 0.48px;}
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.teleph{
+    margin-top: 12px;
+}
 .connect_information{
     display: flex;
     flex-direction: column;
 }
 /*-- portfolio --*/
-.products{
-    margin: 94px 0;
-}
-.catalog__list{
-    display: flex;
-    gap: 30px;
-    margin-top: 50px;
+
+.catalog__list_item{
+    
     flex-wrap: wrap;
     justify-content: center;
+    border: 1px solid #EEE;
 }
 
 .products{
-    display: flex;
-    flex-direction: column;
-    margin: 94px;
-    margin-bottom: 94px;}
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+    
 .catalog__img{
     display: flex;
     flex-wrap: wrap;
 }
 .catalog__list{
-    border: 1px solid #EEE;
-    background: #FFF;        
+    margin-top:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:30px;
+    background: #FFF; 
+}
+.catalog__list_item {
+    max-width: 370px;
 }
 .catalog__wrap{
     padding: 20px 24px;
