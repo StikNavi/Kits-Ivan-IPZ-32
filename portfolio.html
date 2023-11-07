@@ -12,25 +12,27 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="menu_header container">
         <a class="web-studio" href="index.html"><span>Web</span>Studio</a>
         <nav class="menu">
-            <ul>
-                <li><a href="index.html">Студія</a></li>
-                <li><a href="portfolio.html">Портфоліо</a></li>
-                <li><a href="portfolio.html">Контакти</a></li>
+            <ul class="list">
+                <li><a class="link link_active" href="index.html">Студія</a></li>
+                <li><a class="link" href="portfolio.html">Портфоліо</a></li>
+                <li><a class="link" href="portfolio.html">Контакти</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a class="con" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="con" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list contacts__list">
+            <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contacts tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
 
     <main>
         <section class="products">
-             <!-- buttons -->
-            <h2 hidden> buttons catalog</h2>
+            <div class="container">
+                <h2 hidden> buttons catalog</h2>
             <ul class="main">
                 <li><button type="button" class="main__button _focus">Усі</button></li>
                 <li><button type="button" class="main__button">Веб-сайти</button></li>
@@ -40,63 +42,63 @@
             </ul>
         
             <ul class="catalog__list">
-                <li class="catalog__list">
+                <li class="catalog__list_item">
                     <img src="./images/images-1.jpg" alt="" class="catalog__img">
                     <div class="catalog__wrap">
                         <h3 class="catalog__name">Технокряк</h3>
                         <p class="catalog__specification">Веб-сайт</p>
                     </div>
                 </li>
-                <li class="catalog__list">
+                <li class="catalog__list_item">
                     <img src="./images/images-2.jpg" alt="" class="catalog__img">
                     <div class="catalog__wrap">
                         <h3 class="catalog__name">Постер New Orlan vs Golden Star</h3>
                         <p class="catalog__specification">Дизайн</p>
                     </div>
                 </li>
-                <li class="catalog__list">
+                <li class="catalog__list_item">
                     <img src="./images/images-3.jpg" alt="" class="catalog__img">
                     <div class="catalog__wrap">
                         <h3 class="catalog__name">Ресторан SeaFood</h3>
                         <p class="catalog__specification">Додаток</p>
                     </div>
                 </li>
-                <li class="catalog__list">
+                <li class="catalog__list_item">
                     <img src="./images/images-4.jpg" alt="Проєкт Prime" class="catalog__img">
                     <div class="catalog__wrap">
                         <h3 class="catalog__name">Проєкт Prime</h3>
                         <p class="catalog__specification">Маркетинг</p>
                     </div>
                 </li>
-                <li class="catalog__list">
+                <li class="catalog__list_item">
                     <img src="./images/images-5.jpg" alt="" class="catalog__img">
                     <div class="catalog__wrap">
                         <h3 class="catalog__name">Проєкт Boxes</h3>
                         <p class="catalog__specification">Додаток</p>
                     </div>
                 </li>
-                <li class="catalog__list">
+                <li class="catalog__list_item">
                     <img src="./images/images-6.jpg" alt="" class="catalog__img">
                     <div class="catalog__wrap">
                         <h3 class="catalog__name">Inspiration has no Borders</h3>
                         <p class="catalog__specification">Веб-сайт</p>
                     </div>
                 </li>
-                <li class="catalog__list">
+                <li class="catalog__list_item">
                     <img src="./images/images-7.jpg" alt="" class="catalog__img">
                     <div class="catalog__wrap">
                         <h3 class="catalog__name">Видання Limited Edition</h3>
                         <p class="catalog__specification">Дизайн</p>
                     </div>
                 </li>
-                <li class="catalog__list">
+                <li class="catalog__list_item">
                     <img src="./images/images-8.jpg" alt="" class="catalog__img">
                     <div class="catalog__wrap">
                         <h3 class="catalog__name">Проєкт LAB</h3>
                         <p class="catalog__specification">Маркетинг</p>
                     </div>
                 </li>
-                <li class="catalog__list">
+                <li class="catalog__list_item">
                     <img src="./images/images-9.jpg" alt="" class="catalog__img">
                     <div class="catalog__wrap">
                         <h3 class="catalog__name">Growing Business</h3>
@@ -104,6 +106,8 @@
                     </div>
                 </li>
             </ul>
+            </div>
+             <!-- buttons -->
         </section>
     </main>
 
@@ -111,12 +115,13 @@
         <section class="end">
             <a class="web-studio_b" href="index.html"><span>Web</span>Studio</a>
             <address>
-                <ul>
-                    <p>Адреса: м. Київ, пр-т Лесі Українки, 26</p>
+                <ul class="connect_information">
+                    <p class="adr"> Адреса: м. Київ, пр-т Лесі Українки, 26</p>
                     <a class="connect" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="connect" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <a class="connect teleph" href="tel:+380961111111">+38 096 111 11 11</a>
                 </ul>
             </address>
+
         </section>
     </footer>
 </body>
