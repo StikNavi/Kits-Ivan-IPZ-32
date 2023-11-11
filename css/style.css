@@ -13,6 +13,8 @@ p,h2 {
 }
 li {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -68,6 +70,7 @@ button {
     color: var(--primary-color);
     font-weight: 500;
     letter-spacing: 0.28px;
+    position: relative;
 }
 
 .active {
@@ -85,19 +88,34 @@ button {
 
 .navig-mail>.icons:hover{
     color: var(--secondary-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .navig-mail::before{
-    content: url("/images/icons.svg#icon-envelope");
-    display: inline-block;
-    width: 16;
-    height: 12;
-} */
 
 .navig:hover,
 .navig:focus {
-    transition: 300ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--secondary-color);
+}
+
+.navig-list .navig:hover::after,
+.navig-list .navig:focus::after {
+    background: var(--secondary-color);
+}
+
+.navig-list .navig::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    border-radius: 2px;
+    background: transparent;
+    width: 100%;
+    height: 4px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active.navig::after{
+    background: var(--secondary-color);
 }
 
 button,
@@ -145,10 +163,59 @@ a {
 
 .buttona:hover,
 .buttona:focus {
-    transition: 300ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #188ce8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
+}
+
+.modal-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.20);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+  
+.modal-content {
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(0.8);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window:not(.is-hidden) .modal-content {
+    transform: scale(1);
+}
+
+.close-button {
+    display: flex;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.10);
+    background-color: #fff;
+    padding: 6px;
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: auto;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+  
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .busines {
@@ -178,6 +245,32 @@ a {
 .what-section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.what-list {
+    display: flex;
+    gap: 30px;
+    max-height: 294px;
+}
+
+.what-image {
+    position: relative;
+}
+
+.what-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 23.8%;
+    color: #FFF;
+    text-align: center;
+    padding-top: 27px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
 }
 
 .whyheader {
@@ -226,6 +319,9 @@ a {
     padding: 12px;
     /* max-width: 44px;
     max-height: 44px; */
+    transition: color 10s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 10s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-href:hover{
@@ -233,7 +329,9 @@ a {
     border-radius: 50%;
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
-    transition: 300ms;
+    transition: color 10s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 10s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .teamSection {
@@ -256,24 +354,26 @@ a {
     max-width: 170px;
     border-radius: 4px;
     border: 1px solid var(--black-grey);
-    transition: border-color 0.3s ease;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-href{
     display: inline-block;
     padding: 16px 32px ;
     color: var(--black-grey);
-    transition: color 0.3s ease;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item:hover,
 .customers-item:focus {
     border-color: var(--secondary-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item:hover .customers-href,
 .customers-item:focus .customers-href {
     color: var(--secondary-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot {
@@ -294,6 +394,7 @@ a {
 .add-flex{
     display: flex;
     gap: 94px;
+    align-items: baseline;
 }
 
 .foot-header{
@@ -308,10 +409,6 @@ a {
 .foot-contacts{
     display: flex;
     gap: 10px;
-}
-
-.foot-flex{
-    margin-top: 12px;
 }
 
 .foot-href{
@@ -330,7 +427,9 @@ a {
     border-radius: 50%;
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
-    transition: 300ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .info {
@@ -339,7 +438,7 @@ a {
 
 .info:hover,
 .info:focus {
-    transition: 300ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--secondary-color);
 }
 
@@ -359,7 +458,9 @@ a {
 
 .filter-button:hover,
 .filter-button:focus {
-    transition: 300ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--secondary-color);
     border: var(--secondary-color);
     color: #FFF;
@@ -397,10 +498,41 @@ a {
 .portfolio-card {
     border: 1px solid #eee;
     max-width: 370px;
-    
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background: rgba(33, 150, 243, 0.90);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 155.556%;
+    letter-spacing: 0.54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    transform: translateY(0);
 }
 
 .portfolio-card:hover{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -431,11 +563,6 @@ a {
 }
 
 .list-busines {
-    display: flex;
-    gap: 30px;
-}
-
-.what-list {
     display: flex;
     gap: 30px;
 }

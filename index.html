@@ -48,9 +48,17 @@
         <section class="shapka">
             <div class="container">
                 <h1 class="mtext">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="buttona">Замовити послугу</button>
+                <button type="button" class="buttona" data-modal-open="#modal-window">Замовити послугу</button>
             </div>
-            
+            <div class="modal-window is-hidden" data-modal>
+                <div class="modal-content">
+                    <button class="close-button" data-modal-close="#modal-window">
+                        <svg class="icon" width="18" height="18">
+                            <use xlink:href="images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </section>
         <section class="busines">
             <div class="container">
@@ -99,9 +107,18 @@
             <div class="container">
                 <h2 class="whyheader">Чим ми займаємося</h2>
                 <ul class="what-list">
-                <li><img src="images/img.jpg" alt="Кляцає по клаві" width="370"></li>
-                <li><img src="images/img2.png" alt="Дивиться в телефон" width="370"></li>
-                <li><img src="images/img3.png" alt="Вибирає колір на планшеті" width="370"></li>   
+                <li class="what-image">
+                    <img src="images/img.jpg" alt="Кляцає по клаві" width="370">
+                    <div class="what-text">Десктопні додатки</div>
+                </li>
+                <li class="what-image">
+                    <img src="images/img2.png" alt="Дивиться в телефон" width="370">
+                    <div class="what-text">Мобільні додатки</div>
+                </li>
+                <li class="what-image">
+                    <img src="images/img3.png" alt="Вибирає колір на планшеті" width="370">
+                    <div class="what-text">Дизайнерскі рішення</div>
+                </li>   
                 </ul>
             </div>
         </section>
@@ -363,5 +380,6 @@
             
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
