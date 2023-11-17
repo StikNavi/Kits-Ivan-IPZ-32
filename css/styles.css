@@ -6,8 +6,26 @@
 
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+button {
+    border: none;
 }
 
 ul {
@@ -67,11 +85,24 @@ img{
     transition: color 300ms ease-in-out; 
 }
 
-.contacts {
+.contacts {    
+    display: flex;
+    gap:10px;
+    align-items: center;
     font-size: 14px;
     line-height: normal;
     color: #757575;
     margin-right: 40px;
+}
+
+.contacts svg {
+    fill: #757575;
+    transition: fill 300ms ease-in-out;
+}
+
+.contacts:hover svg,
+.contacts:focus {
+    fill: var(--blue-color);
 }
 
 .contacts__list {
@@ -81,8 +112,8 @@ img{
   /* При наведенні мишки текст стає синім */
 .menu a:hover,
 .menu a:focus,
-.con:hover,
-.con:focus {
+.contacts:hover,
+.contacts:focus {
     color: var(--blue-color);
 }
 
@@ -217,13 +248,13 @@ li{
     letter-spacing: 0.96px;
     font-size: 16px;
     background: #2196F3;
-    flex-shrink: 0;
     border-radius: 0px;
     line-height: 187.5%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     display: inline-block;
     text-align: center;
     padding: 10px 24px;
+    border-radius: 4px;
     }
 
     .about-us{
@@ -304,7 +335,7 @@ text-align: center;
 font-size: 36px;
 font-weight: 700;
 letter-spacing: 1.08px;
-padding-bottom: 50px;}
+margin-bottom: 50px;}
 
 .our-team__name{
 color: #212121;
@@ -321,8 +352,8 @@ padding-bottom: 10px;}
     color: #757575;
     text-align: center;
     font-size: 16px;
-    line-height: normal;
     letter-spacing: 0.48px;
+    margin-bottom: 16px;
  }
 .end {
     background: #2F303A;
@@ -438,6 +469,7 @@ padding-bottom: 10px;}
 }    
 
 .main {
+    gap: 8px;
     display: flex;
     align-items: center; /* Центрування по горизонталі */
     justify-content: center;
@@ -454,7 +486,6 @@ padding-bottom: 10px;}
     border-radius: 4px;
     background: #F5F4FA;
     transition: color 0.3s, background 0.3s; /* Додаємо перехідні анімації */
-    margin: 0  4px
   }
   
 .main__button:hover {
@@ -464,11 +495,11 @@ padding-bottom: 10px;}
 /*---------------SVG------------------*/
 .icon-amail {
     width: 16px; 
-    height: 11.996px;
+    height: 12px;
 }
 .icon-smartphone {
     width: 10px; 
-    height: 15.99px;
+    height: 16px;
 }
 .content__image {
     width: 70px;
@@ -477,11 +508,9 @@ padding-bottom: 10px;}
 .content-team__content {
     width: 20px;
     height: 20px;
-    fill:#757575;
+    fill:#AFB1B8;
 }
-.content-team__content:hover{
-    fill: white;
-}
+
 .join__item__content {
     width: 20px;
     height: 20px;
@@ -493,9 +522,7 @@ padding-bottom: 10px;}
     fill:#AFB1B8;
     transition: color 0.3s ease;
 }
-.fulltime-clients__img:hover{
-    fill: #2196F3;
-}
+
 /*---------------*/
 .footer-container{
     display: flex;
@@ -541,17 +568,28 @@ padding-bottom: 10px;}
     transition: background 0.3s ease, color 0.3s ease;
     cursor: pointer;
 }
-.our-team__link{
+
+.our-team__social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.our-team__link a{
+    width: 44px;
+    height: 44px;
     transition: 300ms;
     display: inline-block;
     border-radius: 50%;
     padding: 12px 12px;
-    width: 44px;
-    height: 44px;
-    margin-top: 28px;
 }
-.our-team__link:hover{
+.our-team__link a:hover,
+.our-team__link:focus {
     background: #2196F3;
+}
+
+.our-team__link a:hover svg {
+    fill: #ffffff;
 }
 
 .join__item:hover,
@@ -591,7 +629,7 @@ padding-bottom: 10px;}
     cursor: pointer;
     transition: border 0.1s ease;
 }
-.fulltime-clients__inner:hover {
+.fulltime-clients__inner a:hover {
     border: 1px solid #2196F3;
 }
 .fulltime-client__connect {
@@ -602,9 +640,10 @@ padding-bottom: 10px;}
     height: 100%;
     transition: color 0.3s ease;
 }
-/* .fulltime-client__link:focus  */
-.fulltime-client__connect:hover {
-    color: #2196F3;
+.fulltime-clients__inner a:hover svg,
+.fulltime-clients__inner:focus {
+    fill: #2196F3;
+    
 }
 .about-us__content{
   background: #F5F4FA;
