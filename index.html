@@ -50,15 +50,6 @@
                 <h1 class="mtext">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="buttona" data-modal-open="#modal-window">Замовити послугу</button>
             </div>
-            <div class="modal-window is-hidden" data-modal>
-                <div class="modal-content">
-                    <button class="close-button" data-modal-close="#modal-window">
-                        <svg class="icon" width="18" height="18">
-                            <use xlink:href="images/icons.svg#icon-close"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
         </section>
         <section class="busines">
             <div class="container">
@@ -375,11 +366,74 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="foot-join">
+                        <h2 class="foot-header">Підпишіться на розсилку</h2>
+                        <div class="join-list">
+                            <label class="foot-label" for="user-email" ></label>                                                
+                            <input class="inp-email" type="email" name="email" id="user-email" placeholder="E-mail"/>                              
+                            <button class="join-button" type="button">
+                                Підписатися
+                                <svg class="icon" width="24" height="24">
+                                    <use xlink:href="images/icons.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>         
+                    </div>
                 </address>
             </div>
             
         </div>
     </footer>
+    <div class="modal-window is-hidden" data-modal>
+        <div class="modal-content">
+            <button class="close-button" data-modal-close="#modal-window">
+                <svg class="icon" width="18" height="18">
+                    <use xlink:href="images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="modal-header">Залиште свої дані, ми вам передзвонимо</h2>
+            <ul class="modal-list">
+                <li class="modal-item">
+                    <label class="modal-label" for="modal-input-name">Ім'я</label>
+                    <div class="input-container">
+                        <input class="modal-input" id="modal-input-name" type="text" name="name">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use xlink:href="images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="modal-item">
+                    <label class="modal-label" for="modal-input-phone">Телефон</label>
+                    <div class="input-container">
+                        <input class="modal-input" id="modal-input-name" type="tel" name="phone_number">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use xlink:href="images/icons.svg#icon-phone-bl"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="modal-item">
+                    <label class="modal-label" for="modal-input-email">Пошта</label>
+                    <div class="input-container">
+                        <input class="modal-input" id="modal-input-name" type="email" name="email">
+                        <svg class="modal-icon" width="18" height="18">
+                            <use xlink:href="images/icons.svg#icon-email-bl"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="modal-item">
+                    <label class="modal-label" for="modal-input-coment">Коментар</label>
+                    <textarea class="modal-coment" name="coment" id="modal-input-name" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                </li>
+            </ul>
+            <label class="modal-agree" for="agree-check">
+                <input class="modal-check" type="checkbox" name="agree" id="agree-check"/>
+                <span class="modal-agree-text">Погоджуюся з розсилкою та приймаю 
+                    <a href="#" class="modal-contract">Умови договору</a>
+                </span>
+            </label>
+            <button type="button" class="buttona">Відправити</button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
