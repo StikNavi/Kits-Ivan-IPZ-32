@@ -189,6 +189,19 @@ li{
 .what-we-do{
     padding-bottom: 94px;
 }
+.what-we-do__text-mini{
+    position: absolute;
+    height: 70px;
+    width: 370px;
+    padding: 27px 0;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
 
 /* Стиль для посилання "WebStudio" */
 .web-studio span {
@@ -379,7 +392,7 @@ padding-bottom: 10px;}
 
 
 .adr {
-    color: var(--background-primary-color);
+    color: var(--white-color);
     line-height: 16px;
     padding-top: 28px;
     letter-spacing: 0.42px;
@@ -433,6 +446,23 @@ padding-bottom: 10px;}
     gap:30px;
     background: var(--white-color); 
 }
+.description {
+    position: absolute;
+    top: 0px;
+    left: 50;
+    transform: translateY(89.3%);
+    width: 370px;
+    height: 294px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--blue-color);
+  }
+  .description-text {
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    padding: 63px 24px;
+  }
 .catalog__list_item {
     max-width: 370px;
 }
@@ -488,8 +518,7 @@ padding-bottom: 10px;}
     transition: color 0.3s, background 0.3s; /* Додаємо перехідні анімації */
   }
   
-.main__button:hover
-.main__button:focus {
+.main__button:hover {
     color: var(--white-color);
     background: var(--blue-color);
   }
