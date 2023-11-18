@@ -29,6 +29,7 @@
 
 button {
     border: none;
+    font: inherit;
 }
 
 ul {
