@@ -1,19 +1,19 @@
-.what-section {
+.what {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.what-list {
+.what__list {
     display: flex;
     gap: 30px;
     max-height: 294px;
 }
 
-.what-image {
+.what__image {
     position: relative;
 }
 
-.what-text{
+.what__text{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -29,7 +29,7 @@
     background: rgba(47, 48, 58, 0.80);
 }
 
-.whyheader {
+.minorheader {
     text-align: center;
     font-size: 36px;
     font-weight: 700;

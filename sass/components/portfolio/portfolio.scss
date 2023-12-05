@@ -1,14 +1,4 @@
-.info {
-    color: rgba(255, 255, 255, 0.60);
-}
-
-.info:hover,
-.info:focus {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--secondary-color);
-}
-
-.filter-button {
+.filter__button {
     display: inline-block;
     border-radius: 4px;
     border: #F5F4FA;
@@ -20,25 +10,23 @@
     line-height: 162%;
     letter-spacing: 0.48px;
     padding: 6px 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button:hover,
-.filter-button:focus {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.filter__button:hover,
+.filter__button:focus {
     background-color: var(--secondary-color);
     border: var(--secondary-color);
     color: #FFF;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.portfolio-section{
+.portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.portfolio-head {
+.portfolio__header {
     color: var(--primary-color);
     font-size: 18px;
     font-weight: 700;
@@ -47,12 +35,12 @@
     margin-bottom: 4px;
 }
 
-.portfolio-text{
+.portfolio__text{
     padding: 20px 24px 20px 24px;
     /* gap: 4px; */
 }
 
-.portfolio-filt {
+.portfolio__filters {
     color: var(--white-grey);
     font-size: 16px;
     line-height: 187.5%;
@@ -61,23 +49,23 @@
     margin-bottom: 20px; */
 }
 
-.portfolio-card {
+.portfolio__card {
     border: 1px solid #eee;
     max-width: 370px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus {
+.portfolio__card:hover,
+.portfolio__card:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-image {
+.portfolio__image {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -101,8 +89,8 @@
     padding-right: 24px;
 }
 
-.portfolio-card:hover .portfolio-overlay, 
-.portfolio-card:focus .portfolio-overlay {
+.portfolio__card:hover .portfolio__overlay, 
+.portfolio__card:focus .portfolio__overlay {
     transform: translateY(0);
 }
 
@@ -113,7 +101,7 @@
     margin-bottom: 50px;
 }
 
-.portfolio-list {
+.portfolio__list {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: repeat(3, 1fr);

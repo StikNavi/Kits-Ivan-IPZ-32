@@ -1,13 +1,13 @@
-.teamCard {
+.team__card {
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.teamPara{
+.team__para{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.teamText {
+.team__text {
     color: var(--white-grey);
     text-align: center;
     font-size: 16px;
@@ -15,7 +15,7 @@
     margin-bottom: 16px;
 }
 
-.teamName {
+.team__name {
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -23,37 +23,35 @@
     margin-bottom: 10px;
 }
 
-.team-contacts{
+.team__contacts{
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.team-href{
+.team__href{
     display: flex;
     border-radius: 50%;
     color: var(--black-grey);
     padding: 12px;
-    transition: color 250s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-href:hover,
-.team-href:focus{
+.team__href:hover,
+.team__href:focus{
     color: #fff;
     border-radius: 50%;
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
 }
 
-.teamSection {
+.team__section {
     background: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.team-list {
+.team__list {
     display: flex;
     gap: 30px;
 }

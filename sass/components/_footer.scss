@@ -1,10 +1,10 @@
-.foot {
+.footer {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.add {
+.footer__add {
     /* display: flex; */
     color: #FFF;
     line-height: 114.286%;
@@ -13,21 +13,21 @@
     /* gap: 94px; */
 }
 
-.add>ul>li:not(:last-child){
+.footer__add>ul>li:not(:last-child){
     margin-bottom: 12px;
 }
 
-.add-flex{
+.footer__block {
     display: flex;
     gap: 94px;
     align-items: baseline;
 }
 
-.join-list {
+.footer__form {
     display: flex;
 }
 
-.inp-email {
+.footer__email {
     border-radius: 4px;
     padding: 15px 16px 15px;
     width: 358px;
@@ -39,11 +39,11 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.inp-email:focus{
+.footer__email:focus{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.join-button {
+.footer__button {
     display: flex;
     align-items: center;
     border-radius: 4px;
@@ -59,14 +59,14 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-button:hover,
-.join-button:focus {
+.footer__button:hover,
+.footer__button:focus {
     background-color: #188ce8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
 }
 
-.foot-header{
+.footer__header{
     color: #FFF;
     font-size: 14px;
     font-weight: 700;
@@ -75,29 +75,37 @@
     margin-bottom: 20px;
 }
 
-.foot-contacts{
+.footer__contacts{
     display: flex;
     gap: 10px;
 }
 
-.foot-href{
+.footer__href{
     display: flex;
     color: #fff;
     padding: 12px;
     border: rgba(255, 255, 255, 0.10);
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.10);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* max-width: 44px;
     max-height: 44px; */
 }
 
-.foot-href:hover,
-.foot-href:focus {
+.footer__href:hover,
+.footer__href:focus {
     color: #fff;
     border-radius: 50%;
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
+}
+
+.info {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.info:hover,
+.info:focus {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--secondary-color);
 }

@@ -2,27 +2,28 @@
     padding-top: 94px;
 }
 
-.busines-icons{
+.busines__icons {
     border-radius: 4px;
     background: #F5F4FA;
     padding: 25px 100px;
     margin-bottom: 30px;
 }
-.newheader {
+
+.busines__header {
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-.texth {
+.busines__text {
     color: var(--white-grey);
     line-height: 171.429%;
     letter-spacing: 0.42px;
     max-width: 270px;
 }
 
-.list-busines {
+.busines__list {
     display: flex;
     gap: 30px;
 }

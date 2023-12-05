@@ -1,0 +1,5 @@
+@mixin navi-link($color, $font-weith, $letter-spacing) {
+    color: $color;
+    font-weight: $font-weith;
+    letter-spacing: $letter-spacing;
+}

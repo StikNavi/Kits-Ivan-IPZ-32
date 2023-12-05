@@ -1,4 +1,4 @@
-.shapka {
+.main {
     max-height: 600px;
     padding: 200px 0;
     background: #2F303A;
@@ -7,7 +7,7 @@
     url("../images/BackGround.jpg");
 }
 
-.mtext {
+.main__header {
     color: #FFF;
     text-align: center;
     font-size: 44px;
@@ -19,7 +19,7 @@
     margin: auto;
 }
 
-.buttona {
+.main__button {
     display: block;
     border-radius: 4px;
     border: var(--secondary-color);
@@ -37,8 +37,8 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttona:hover,
-.buttona:focus {
+.main__button:hover,
+.main__button:focus {
     background-color: #188ce8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 

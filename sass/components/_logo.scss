@@ -1,25 +1,20 @@
-.logob,
-.logow {
+.logo {
     color: var(--secondary-color);
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-    
-}
-.logob{
-    margin-right: 93px;
-}
-
-.logob span {
-    color: #000;
-}
-
-.logow span {
-    color: #FFF;
-}
-
-.logow {
-    display: inline-block;
-    margin-bottom: 26px;
+    &__header {
+        margin-right: 93px;
+    }
+    &__footer {
+        display: inline-block;
+        margin-bottom: 26px;
+    }
+    &__white {
+        color: #FFF;
+    }
+    &__black {
+        color: #000;
+    }
 }
