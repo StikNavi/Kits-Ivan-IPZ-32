@@ -126,16 +126,16 @@
     }
 
     .footer__email {
-        width: 450px;
+        width: 80%;
         margin-right: 0;
+    }
+
+    .footer__join {
+        width: 100%;
     }
 
     .footer__join>.footer__header {
         margin-bottom: 0;
-    }
-
-    .footer-contacts {
-        margin-left: 0;
     }
 
 }
@@ -145,7 +145,7 @@
         display: flex;
         gap: 60px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         text-align: center;
     }
 
@@ -156,12 +156,12 @@
     }
 
     .footer__email {
-        width: 450px;
+        width: 60%;
         margin-right: 0;
     }
 
-    .footer-contacts {
-        margin-left: 135px;
+    .footer__join {
+        width: 100%;
     }
 
     .footer__join>.footer__header {

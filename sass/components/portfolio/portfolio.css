@@ -101,10 +101,13 @@
 }
 
 .portfolio__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+.hidden-card {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -134,7 +137,7 @@
     margin-bottom: 30px;
   }
   .portfolio__photo {
-    width: 450px;
+    width: 354px;
   }
   .portfolio__card {
     max-width: 354px;
