@@ -13,7 +13,7 @@
     position: relative;
 }
 
-.what__text{
+.what__text {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -35,4 +35,22 @@
     font-weight: 700;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width:1170px) {
+    .what {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border: 0;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+    }
+
+    .minorheader {
+        font-size: 28px;
+        letter-spacing: 0.84px;
+        margin-bottom: 30px;
+    }
 }

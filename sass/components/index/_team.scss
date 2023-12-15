@@ -45,7 +45,7 @@
     background-color: var(--secondary-color);
 }
 
-.team__section {
+.team {
     background: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -54,4 +54,36 @@
 .team__list {
     display: flex;
     gap: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .team {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .team__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team__photo {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+    .team {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .team__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team__photo {
+        width: 354px;
+    }
 }

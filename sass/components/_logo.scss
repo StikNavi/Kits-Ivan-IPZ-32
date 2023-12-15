@@ -4,17 +4,28 @@
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
+
     &__header {
         margin-right: 93px;
     }
+
     &__footer {
         display: inline-block;
         margin-bottom: 26px;
     }
+
     &__white {
         color: #FFF;
     }
+
     &__black {
         color: #000;
     }
+
+    @media (max-width: 1200px) {
+
+        font-size: 24px;
+        letter-spacing: 0.72px;
+    }
+
 }
