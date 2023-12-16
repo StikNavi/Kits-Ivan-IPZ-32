@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/mainmin.css">
+    </head>
 
 <body>
     <header class="header">
-        <div class="menu_header container">
-        <a class="web-studio" href="index.html"><span>Web</span>Studio</a>
-        <nav class="menu">
-            <ul class="list">
-                <li><a class="link" href="index.html">Студія</a></li>
-                <li><a class="link link_active" href="portfolio.html">Портфоліо</a></li>
-                <li><a class="link" href="portfolio.html">Контакти</a></li>
+        <div class="container">
+        <a class="header__logo" href="index.html"><span>Web</span>Studio</a>
+        <nav>
+            <ul class="header__list">
+                <li><a class="header__link" href="index.html">Студія</a></li>
+                <li><a class="header__link header__link_active" href="portfolio.html">Портфоліо</a></li>
+                <li><a class="header__link" href="portfolio.html">Контакти</a></li>
             </ul>
         </nav>
-        <ul class="list contacts__list">
+        <ul class="header__contact-info">
             <li>
-                
-                <a class="contacts" href="mailto:info@devstudio.com">
-                <svg class="icon icon-amail">
+                <a class="header__email" href="mailto:info@devstudio.com"><svg class="header__email-icon" width="16" height="12">
                     <use xlink:href="symbol-defs.svg#icon-amail"></use>
-                </svg>
-                info@devstudio.com</a>
-            </li>
-            <li>
-                
-                <a class="contacts tel" href="tel:+380961111111">
-                    <svg class="icon icon-smartphone">
-                        <use xlink:href="symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-            </li>
+                  </svg>info@devstudio.com</a>
+              </li>
+              <li>
+                <a class="header__tel" href="tel:+380961111111"><svg class="header__phone-icon" width="10" height="16">
+                    <use xlink:href="symbol-defs.svg#icon-smartphone"></use>
+                  </svg>+38 096 111 11 11</a>
+              </li>
         </ul>
         </div>
     </header>
 
     <main>
-        <section class="products">
+        <section class="catalog-list">
             <div class="container">
                 <h2 hidden> buttons catalog</h2>
             <ul class="main">
-                <li><button type="button" class="main__button _focus">Усі</button></li>
+                <li><button type="button" class="main__button">Усі</button></li>
                 <li><button type="button" class="main__button">Веб-сайти</button></li>
                 <li><button type="button" class="main__button">Додатки</button></li>
-                <li> <button type="button" class="main__button">Дизайн</button></li>
+                <li><button type="button" class="main__button">Дизайн</button></li>
                 <li><button type="button" class="main__button">Маркетинг</button></li>
             </ul>
         
-            <ul class="catalog__list">
-                <li class="catalog__list_item">
-                    <a href="#" class="product_link">
-                    <div class="box">
-                    <img src="./images/images-1.jpg" alt="Ноутбук" class="catalog__img">
-                    <div class="description">
-                        <p class="description-text">
+            <ul class="catalog-list__menu">
+                <li class="catalog-list__item">
+                    <a href="#" class="catalog-list__link">
+                    <div class="catalog-list__box">
+                    <img src="./images/images-1.jpg" alt="Ноутбук" class="catalog-list__img">
+                    <div class="catalog-list__description">
+                        <p class="catalog-list__description-text">
                           Ресурс пропонує комплексні пропозиції
                           з різним рівнем функціоналу та сервісів.
                           Все це дозволить відвідувачу отримати вичерпні
@@ -69,18 +62,18 @@
                         </p>
                       </div>
                     </div>
-                    <div class="catalog__wrap">
-                        <h3 class="catalog__name">Технокряк</h3>
-                        <p class="catalog__specification">Веб-сайт</p>
+                    <div class="catalog-list__job">
+                        <h3 class="catalog-list__name">Технокряк</h3>
+                        <p class="catalog-list__specification">Веб-сайт</p>
                     </div>
                     </a>
                 </li>
-                <li class="catalog__list_item">
-                    <a href="#" class="product_link">
-                    <div class="box">
-                    <img src="./images/images-2.jpg" alt="Баскетбол" class="catalog__img">
-                    <div class="description">
-                        <p class="description-text">
+                <li class="catalog-list__item">
+                    <a href="#" class="catalog-list__link">
+                    <div class="catalog-list__box">
+                    <img src="./images/images-2.jpg" alt="Баскетбол" class="catalog-list__img">
+                    <div class="catalog-list__description">
+                        <p class="catalog-list__description-text">
                           Ресурс пропонує комплексні пропозиції
                           з різним рівнем функціоналу та сервісів.
                           Все це дозволить відвідувачу отримати вичерпні
@@ -88,18 +81,18 @@
                         </p>
                       </div>
                     </div>
-                    <div class="catalog__wrap">
-                        <h3 class="catalog__name">Постер New Orlan vs Golden Star</h3>
-                        <p class="catalog__specification">Дизайн</p>
+                    <div class="catalog-list__job">
+                        <h3 class="catalog-list__name">Постер New Orlan vs Golden Star</h3>
+                        <p class="catalog-list__specification">Дизайн</p>
                     </div>
                     </a>
                 </li>
-                <li class="catalog__list_item">
-                    <a href="#" class="product_link">
-                    <div class="box">
-                    <img src="./images/images-3.jpg" alt="Риба" class="catalog__img">
-                    <div class="description">
-                        <p class="description-text">
+                <li class="catalog-list__item">
+                    <a href="#" class="catalog-list__link">
+                    <div class="catalog-list__box">
+                    <img src="./images/images-3.jpg" alt="Риба" class="catalog-list__img">
+                    <div class="catalog-list__description">
+                        <p class="catalog-list__description-text">
                           Ресурс пропонує комплексні пропозиції
                           з різним рівнем функціоналу та сервісів.
                           Все це дозволить відвідувачу отримати вичерпні
@@ -107,18 +100,18 @@
                         </p>
                       </div>
                     </div>
-                    <div class="catalog__wrap">
-                        <h3 class="catalog__name">Ресторан SeaFood</h3>
-                        <p class="catalog__specification">Додаток</p>
+                    <div class="catalog-list__job">
+                        <h3 class="catalog-list__name">Ресторан SeaFood</h3>
+                        <p class="catalog-list__specification">Додаток</p>
                     </div>
                     </a>
                 </li>
-                <li class="catalog__list_item">
-                    <a href="#" class="product_link">
-                    <div class="box">
-                    <img src="./images/images-4.jpg" alt="Навушники" class="catalog__img">
-                    <div class="description">
-                        <p class="description-text">
+                <li class="catalog-list__item">
+                    <a href="#" class="catalog-list__link">
+                    <div class="catalog-list__box">
+                    <img src="./images/images-4.jpg" alt="Навушники" class="catalog-list__img">
+                    <div class="catalog-list__description">
+                        <p class="catalog-list__description-text">
                           Ресурс пропонує комплексні пропозиції
                           з різним рівнем функціоналу та сервісів.
                           Все це дозволить відвідувачу отримати вичерпні
@@ -126,18 +119,18 @@
                         </p>
                       </div>
                     </div>
-                    <div class="catalog__wrap">
-                        <h3 class="catalog__name">Проєкт Prime</h3>
-                        <p class="catalog__specification">Маркетинг</p>
+                    <div class="catalog-list__job">
+                        <h3 class="catalog-list__name">Проєкт Prime</h3>
+                        <p class="catalog-list__specification">Маркетинг</p>
                     </div>
                     </a>
                 </li>
-                <li class="catalog__list_item">
-                    <a href="#" class="product_link">
-                    <div class="box">
-                    <img src="./images/images-5.jpg" alt="Коробки" class="catalog__img">
-                    <div class="description">
-                        <p class="description-text">
+                <li class="catalog-list__item">
+                    <a href="#" class="catalog-list__link">
+                    <div class="catalog-list__box">
+                    <img src="./images/images-5.jpg" alt="Коробки" class="catalog-list__img">
+                    <div class="catalog-list__description">
+                        <p class="catalog-list__description-text">
                           Ресурс пропонує комплексні пропозиції
                           з різним рівнем функціоналу та сервісів.
                           Все це дозволить відвідувачу отримати вичерпні
@@ -145,18 +138,18 @@
                         </p>
                       </div>
                     </div>
-                    <div class="catalog__wrap">
-                        <h3 class="catalog__name">Проєкт Boxes</h3>
-                        <p class="catalog__specification">Додаток</p>
+                    <div class="catalog-list__job">
+                        <h3 class="catalog-list__name">Проєкт Boxes</h3>
+                        <p class="catalog-list__specification">Додаток</p>
                     </div>
                     </a>
                 </li>
-                <li class="catalog__list_item">
-                    <a href="#" class="product_link">
-                    <div class="box">
-                    <img src="./images/images-6.jpg" alt="iMac" class="catalog__img">
-                    <div class="description">
-                        <p class="description-text">
+                <li class="catalog-list__item">
+                    <a href="#" class="catalog-list__link">
+                    <div class="catalog-list__box">
+                    <img src="./images/images-6.jpg" alt="iMac" class="catalog-list__img">
+                    <div class="catalog-list__description">
+                        <p class="catalog-list__description-text">
                           Ресурс пропонує комплексні пропозиції
                           з різним рівнем функціоналу та сервісів.
                           Все це дозволить відвідувачу отримати вичерпні
@@ -164,18 +157,18 @@
                         </p>
                       </div>
                     </div>
-                    <div class="catalog__wrap">
-                        <h3 class="catalog__name">Inspiration has no Borders</h3>
-                        <p class="catalog__specification">Веб-сайт</p>
+                    <div class="catalog-list__job">
+                        <h3 class="catalog-list__name">Inspiration has no Borders</h3>
+                        <p class="catalog-list__specification">Веб-сайт</p>
                     </div>
                     </a>
                 </li>
-                <li class="catalog__list_item">
-                    <a href="#" class="product_link">
-                    <div class="box">
-                    <img src="./images/images-7.jpg" alt="Журнал" class="catalog__img">
-                    <div class="description">
-                        <p class="description-text">
+                <li class="catalog-list__item">
+                    <a href="#" class="catalog-list__link">
+                    <div class="catalog-list__box">
+                    <img src="./images/images-7.jpg" alt="Журнал" class="catalog-list__img">
+                    <div class="catalog-list__description">
+                        <p class="catalog-list__description-text">
                           Ресурс пропонує комплексні пропозиції
                           з різним рівнем функціоналу та сервісів.
                           Все це дозволить відвідувачу отримати вичерпні
@@ -183,18 +176,18 @@
                         </p>
                       </div>
                     </div>
-                    <div class="catalog__wrap">
-                        <h3 class="catalog__name">Видання Limited Edition</h3>
-                        <p class="catalog__specification">Дизайн</p>
+                    <div class="catalog-list__job">
+                        <h3 class="catalog-list__name">Видання Limited Edition</h3>
+                        <p class="catalog-list__specification">Дизайн</p>
                     </div>
                     </a>
                 </li>
-                <li class="catalog__list_item">
-                    <a href="#" class="product_link">
-                    <div class="box">
-                    <img src="./images/images-8.jpg" alt="Брілок" class="catalog__img">
-                    <div class="description">
-                        <p class="description-text">
+                <li class="catalog-list__item">
+                    <a href="#" class="catalog-list__link">
+                    <div class="catalog-list__box">
+                    <img src="./images/images-8.jpg" alt="Брілок" class="catalog-list__img">
+                    <div class="catalog-list__description">
+                        <p class="catalog-list__description-text">
                           Ресурс пропонує комплексні пропозиції
                           з різним рівнем функціоналу та сервісів.
                           Все це дозволить відвідувачу отримати вичерпні
@@ -202,27 +195,27 @@
                         </p>
                       </div>
                     </div>
-                    <div class="catalog__wrap">
-                        <h3 class="catalog__name">Проєкт LAB</h3>
-                        <p class="catalog__specification">Маркетинг</p>
+                    <div class="catalog-list__job">
+                        <h3 class="catalog-list__name">Проєкт LAB</h3>
+                        <p class="catalog-list__specification">Маркетинг</p>
                     </div>
                     </a>
                 </li>
-                <li class="catalog__list_item">
-                    <a href="#" class="product_link">
-                    <div class="box">
-                    <img src="./images/images-9.jpg" alt="MacBook Pro" class="catalog__img">
-                    <div class="description">
-                        <p class="description-text">
+                <li class="catalog-list__item">
+                    <a href="#" class="catalog-list__link">
+                    <div class="catalog-list__box">
+                    <img src="./images/images-9.jpg" alt="MacBook Pro" class="catalog-list__img">
+                    <div class="catalog-list__description">
+                        <p class="catalog-list__description-text">
                           Ресурс пропонує комплексні пропозиції
                           з різним рівнем функціоналу та сервісів.
                           Все це дозволить відвідувачу отримати вичерпні
                           відомості про компанію чи приватну особу
                         </p>
                       </div></div>
-                    <div class="catalog__wrap">
-                        <h3 class="catalog__name">Growing Business</h3>
-                        <p class="catalog__specification">Додаток</p>
+                    <div class="catalog-list__job">
+                        <h3 class="catalog-list__name">Growing Business</h3>
+                        <p class="catalog-list__specification">Додаток</p>
                     </div>
                     </a>
                 </li>
@@ -232,17 +225,16 @@
         </section>
     </main>
 
-    <footer>
-        <section class="end">
-            <div class="footer-container">
-            <div class="info-footer">
-            <a class="web-studio_b" href="index.html"><span>Web</span>Studio</a>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__info">
+            <a class="footer__logo" href="index.html"><span>Web</span>Studio</a>
             <address>
-                <ul class="connect_information">
-                    <p class="adr"> Адреса: м. Київ, пр-т Лесі Українки, 26</p>
-                    <a class="connect" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="connect teleph" href="tel:+380961111111">+38 096 111 11 11</a>
-                </ul>
+            <ul class="footer__contact-info">
+                <p class="footer__studio-address">м. Київ, пр-т Лесі Українки, 26</p>
+                <a class="footer__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </ul>
             </address>
             </div>
             <div class="join">
@@ -250,46 +242,47 @@
                 <ul class="join__list">
                     <li class="join__item">
                         <a href="https://www.instagram.com" target="_blank" class="join__social">
-                            <svg class="join__item__content">
+                            <svg class="join__item-icon">
                                 <use xlink:href="symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="join__item">
                         <a href="https://twitter.com/" target="_blank" class="join__social">
-                            <svg class="join__item__content">
+                            <svg class="join__item-icon">
                                 <use xlink:href="symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="join__item">
                         <a href="https://facebook.com/" target="_blank" class="join__social">
-                            <svg class="join__item__content">
+                            <svg class="join__item-icon">
                                 <use xlink:href="symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="join__item">
                         <a href="https://linkedin.com/" target="_blank" class="join__social">
-                            <svg class="join__item__content">
+                            <svg class="join__item-icon">
                                 <use xlink:href="symbol-defs.svg#icon-linkedin2"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>        
-            <form class="email_footer">
-                <h2 class="email_title">Підпишіться на розсилку</h2>
-                <input class="email_input" required type="email" placeholder="E-mail">
-                <button class="button_subscribe" type="submit">
-                  <div class="button_submit_footer">
+            <div class="telegram">
+                <h2 class="telegram__title">Підпишіться на розсилку</h2>
+                <form action="">
+                    <input class="telegram__input" required type="email" placeholder="E-mail">
+                <button class="telegram__button-subscribe" type="submit">
+                  <div class="telegram__button-submit">
                     Підписатися
-                    <svg class="telegram_icon" width="24" height="25">
+                    <svg class="telegram__icon" width="24" height="25">
                     <use xlink:href="sprite.svg#icon-telegram"></use>
                     </svg>
                   </div>
                 </button>
-              </form>
+                </form>
             </div>
         </section>
     </footer>

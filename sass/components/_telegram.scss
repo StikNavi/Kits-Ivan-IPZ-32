@@ -1,0 +1,49 @@
+.telegram {
+
+& form {
+  display: flex;
+}
+
+&__title{
+    color: var(--white-color);
+    margin-bottom: 20px;
+    font-weight: 700;    
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+&__input{
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    padding: 15px 16px;
+    width: 358px;
+    color: #afb1b8;
+    background-color: #2f303a;
+}
+&__input::placeholder{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+  }
+&__button-subscribe{
+    margin-left: 12px;
+    padding: 10px 28px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.96px;
+    color: var(--white-color);
+    line-height: 1.875;
+    background-color: var(--blue-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+&__button-subscribe:focus,
+&__button-subscribe:hover {
+  background-color: var(--blue-color);
+}
+&__button-submit{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }  
+}

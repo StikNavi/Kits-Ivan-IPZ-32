@@ -1,0 +1,54 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2F303A;
+
+    .container {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        color: var(--white-color);
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.78px;
+        line-height: normal;
+
+        span {
+            color: var(--blue-color);
+            font-family: Raleway;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.78px;
+            line-height: normal;
+        }
+    }
+
+    &__contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__studio-address {
+        color: var(--white-color);
+        line-height: 16px;
+        letter-spacing: 0.42px;
+        margin-bottom: 12px;
+    }
+    &__email{
+        color: var(--fog-color);
+        font-size: 14px;
+        line-height: 114.286%;
+        letter-spacing: 0.42px;
+    }
+    &__tel{
+        color: var(--fog-color);
+        font-size: 14px;
+        line-height: 114.286%;
+        letter-spacing: 0.42px;
+        margin-top: 12px;
+    }
+}
