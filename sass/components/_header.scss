@@ -1,0 +1,129 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+    height: 80px;
+
+    .container{
+        display: flex;
+        align-items:center;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    &__logo span {
+        color: var(--blue-color);
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.78px;
+        line-height: normal;
+    }
+    &__logo {
+        font-family: Raleway;
+        color: var(--black-color);
+        font-size: 26px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.78px;
+        margin-right: 93px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 50px;
+    }
+    &__link, .contacts {
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    transition: color 300ms ease-in-out; 
+    margin-left: auto;
+    }
+    &__link{
+    position: relative;
+    padding-top:  32px;
+    padding-bottom: 32px;
+    }
+    &__link:hover,
+    &__link:focus {
+    color: var(--blue-color);
+    }
+    &__link_active{
+    color: var(--blue-color)
+    }
+    &__link_active::after{
+    content: "";
+    background-color: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    }
+    &__contact-info {
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
+    color: #757575;
+    list-style-type: none;
+    }
+    &__email {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.28px;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    fill: #757575;
+    }
+  
+    &__email:focus, 
+    &__email:hover {
+    transition: all 0.3s;
+    color: #2196F3;
+    fill: #2196F3;
+    }
+    &__email-icon {
+        margin-right: 10px;
+    }
+      
+    &__email-icon:hover {
+        transition: all 0.3s;
+        color: #2196F3;
+        fill: #2196F3;
+    }
+    &__email-icon {
+        margin-right: 10px;
+    }
+      
+    &__email-icon:hover {
+        transition: all 0.3s;
+        color: #2196F3;
+        fill: #2196F3;
+    }
+    &__tel {
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: 0.28px;
+        color: inherit;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        fill: #757575;
+    }
+      
+    &__tel:hover, 
+    &__tel:focus {
+        transition: all 0.3s;
+        color: #2196F3;
+        fill: #2196F3;
+    }
+    &__phone-icon {
+        margin-right: 10px;
+    }
+      
+    &__phone-icon:hover {
+        transition: all 0.3s;
+        color: #2196F3;
+        fill: #2196F3;
+    }
+}

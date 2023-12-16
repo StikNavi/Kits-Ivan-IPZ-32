@@ -1,0 +1,81 @@
+.our-team {
+    background: #F5F4FA    ;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+        color: var(--black-color);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+        }
+    &__list{
+        display: flex;
+        justify-content:center;
+        width: 100%;
+    }
+    &__item {
+        background: var(--white-color);
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+    &__item:not(:first-child)
+    {
+    margin-left:30px;
+    }
+    &__img {
+        flex-shrink: 0;
+        border-radius: 0px 0px 4px 4px;
+        background: var(--white-color);
+        /* material shadow v1 */
+    }
+    &__wrap {
+        padding: 30px;
+    }
+    &__name{
+        color: var(--black-color);
+        text-align: center;
+        font-size: 16px;
+        line-height: normal;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        margin-bottom: 10px;
+        }
+    &__job{
+        color: var(--gray-color);;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.48px;
+        margin-bottom: 16px;
+     }
+     &__social {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    &__content{
+        width: 44px;
+        height: 44px;
+        transition: 300ms;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 12px;
+        fill: var(--social_link_color);
+    }
+    &__content:hover,
+    &__content:focus {
+        background: var(--blue-color);
+    }
+    
+    &__content:hover svg,
+    &__content:focus svg
+    {
+        fill: var(--white-color);
+    }
+    &__svg {
+        width: 20px;
+        height: 20px;
+        fill:var(--fog-color);
+    }
+}

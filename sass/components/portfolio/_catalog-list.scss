@@ -1,0 +1,87 @@
+.catalog-list{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__menu{
+        margin-top:50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        gap:30px;
+        background: var(--white-color); 
+    }
+    &__item{
+        max-width: 370px;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid #EEEEEE;
+        
+    }
+    &__item:hover,
+    &__item:focus{
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+    &__link
+    {
+    display: inline-block;
+    text-decoration: none;
+    }
+    &__link:hover .catalog-list__description,
+    &__link:focus .catalog-list__description {
+    transform: translateY(0);
+    }
+    &__box {
+        position: relative;
+        overflow: hidden;
+    }
+    &__img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__description {
+        transition:cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 250ms ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(101%);
+        height: 100%;
+        width: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+    }
+    .catalog-list__link:hover &__description,
+    .catalog-list__link:focus &__description {
+          transform: translateY(0);
+    }
+    &__description-text {
+        color: var(--white-color);
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.54px;
+        padding: 63px 24px;
+    }
+    &__job{
+        padding: 20px 24px;
+        line-height: normal;    
+    }
+    &__job:not(:last-child) {
+        padding-bottom: 4px;
+    }
+    &__name {
+        text-decoration: none;
+        color: var(--black-color);
+        font-size: 18px;
+        line-height: 200%;
+        font-weight: 700;
+        text-align: left;
+        letter-spacing: 1.08px;
+    }
+    &__specification {
+        color: var(--gray-color);;
+        font-size: 16px;
+        line-height: 187.5%;
+        letter-spacing: 0.48px;
+    }  
+}
