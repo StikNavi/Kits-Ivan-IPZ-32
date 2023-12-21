@@ -1,0 +1,11 @@
+.comment{
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+
+&::placeholder{
+    color: rgba(117, 117, 117, 0.50);
+    font-size: 12px;
+    letter-spacing: 0.12px;
+ }
+}

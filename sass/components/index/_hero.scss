@@ -1,0 +1,39 @@
+.hero {
+    background-color: var(--asphalt-color);
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    align-items: center; /* Центрування по вертикалі */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-height: 600px;
+    background: linear-gradient(var(--asphalt-color),var(--asphalt-color)),
+        url("../images/BG-img.jpg");
+    background-size: cover;
+
+    &__title {
+        width: 696px;
+        color: var(--white-color);
+        text-align: center;
+        font-size: 44px;
+        line-height:136.364%; 
+        font-weight: 900;
+        max-width: 696px;
+        margin-bottom: 30px;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+    }
+    &__button {
+        border-radius: 4px;
+        padding: 10px 24px;
+        margin: auto;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.96px;
+        cursor: pointer;
+        background-color: #2196F3;
+        color: #FFFFFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        display: flex;
+    }
+}

@@ -75,7 +75,6 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 24px;
     padding-bottom: 24px;
-    
     background: rgba(33, 150, 243, 0.90);
     color: #FFF;
     font-size: 18px;
@@ -89,10 +88,12 @@
     padding-right: 24px;
 }
 
-.portfolio__card:hover .portfolio__overlay, 
-.portfolio__card:focus .portfolio__overlay {
+
+.portfolio__hov:hover .portfolio__overlay,
+.portfolio__hov:focus .portfolio__overlay {
     transform: translateY(0);
 }
+
 
 .filters {
     display: flex;
