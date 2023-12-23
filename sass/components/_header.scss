@@ -72,10 +72,6 @@
     margin-right: 40px;
 }
 
-.navigation__list>li:not(:last-child) {
-    margin-right: 50px;
-}
-
 .contacts__menu,
 .social {
     display: none;
@@ -123,7 +119,8 @@
         flex-direction: column-reverse;
         align-items: flex-start;
         gap: 32px;
-        margin-top: 250px;
+        margin-top: auto; 
+        margin-bottom: 0;
     }
 
     .navigation__link {
