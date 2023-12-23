@@ -4,8 +4,19 @@ $white-grey: #757575;
 $black-grey: #AFB1B8;
 
 :root{
+    --primary-font: 'Roboto', sans-serif;
     --primary-color: #212121;
     --secondary-color: #2196F3;
     --white-grey: #757575;
     --black-grey: #AFB1B8;
+}
+
+:root {
+    
+    // --black-color: #212121;
+    // --blue-color: #2196F3;
+    // --gray-color: #757575;
+    // --white-color: #FFF;
+    // --asphalt-color: rgba(255, 255, 255, 0.1);
+    // --fog-color: #AFB1B8;
 }

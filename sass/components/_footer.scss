@@ -11,10 +11,14 @@
     letter-spacing: 0.42px;
     font-style: normal;
     /* gap: 94px; */
-}
 
-.footer__add>ul>li:not(:last-child) {
-    margin-bottom: 12px;
+    ul li:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    li {
+        display: block;
+    }
 }
 
 .footer__block {
